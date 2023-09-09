@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="web-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Alarm Clock</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initClock()">
+
+    <header>
+        <h1>🙶 Digital Alarm Clock 🙷</h1>
+    </header>
+    
+    <div class="alarm">
+
+        <!-- Digital Clock Start -->
+        <div class="datetime">
+
+        <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+        </div>
+
+        <div class="time">
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+
+    </div>
+
+
+    <hr>
+
+    <div class="setAlarm">
+        <div class="column">
+            <select>
+                <option value="setHour" selected hidden>Hour</option>
+            </select>
+        </div>
+
+
+
+        <div class="column">
+            <select>
+                <option value="setMinute" selected hidden>Minute</option>
+            </select>
+        </div>
+
+
+
+        <div class="column">
+            <select>
+                <option value="AM/PM" selected hidden>AM/PM</option>
+            </select>
+        </div>
+
+        
+        <button id="btn-setAlarm" type="submit">Set Alarm</button>
+
+        
+    </div>
+
+    <hr>
+
+    <h3 id="alarm-h3"></h3>
+
+    <div class="alarmList"></div>
+
+    <button id="stopAlarm" onclick="stopAlarm()">Stop Ringing!!</button>
+
+    </div>
+
+   
+    <script src="script.js"></script>
+
+
+    <footer>
+        <p>Copyright © 2023 <a href="https://www.linkedin.com/in/rohankumar04/" class="linkedin-link">Rohan Kumar</a></p>
+    </footer>
+
+</body>
+</html>

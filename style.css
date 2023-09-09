@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    text-align: center;
+    padding: 14px;
+    color: #fff;
+    text-decoration: underline;
+    border: 2px solid transparent;
+    transition: border 0.2s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header:hover {
+    cursor: pointer;
+    border: 2px solid white;
+    color: black;
+}
+
+.alarm {
+    border-radius: 8px;
+}
+
+.datetime {
+    color: #fff;
+    background: transparent;
+    font-family: 'Segoe UI', sans-serif;
+    width: 340px;
+    padding: 15px 10px;
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+
+.datetime:hover {
+    cursor: pointer;
+    background: #47e05e;
+    box-shadow: 0 0 40px #2d95e3;
+    border-radius: 11px;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.time {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child) {
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.time span:last-child {
+    background: #47e05e;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 4px;
+    border-radius: 2px;
+}
+
+hr {
+    border: 1.4px solid black;
+    margin: 5px auto;
+}
+
+.setAlarm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column select {
+    cursor: pointer;
+    background: #10101E;
+    color: #fff;
+    text-align: center;
+    margin: 3px;
+    padding: 7px 3px;
+    border: 2px solid #47e05e;
+    border-radius: 18px;
+}
+
+#btn-setAlarm, .btn-delete, #stopAlarm {
+    padding: 6px;
+    font-size: medium;
+    color: #fff;
+    background: #2E94E3;
+    border: 0px solid #2E94E3;
+    border-radius: 20px;
+}
+
+#stopAlarm {
+    visibility: hidden;
+    width: 100px;
+    margin: 0 34% 10%;
+}
+
+.btn-delete {
+    margin-left: 30px;
+}
+
+#btn-setAlarm:hover, .btn-delete:hover, #stopAlarm:hover {
+    cursor: pointer;
+    background: #2E94E3;
+    box-shadow: 0 0 30px #47e05e;
+}
+
+/* Third box (Alarm log box) Alarms */
+h3 {
+    color: #fff;
+    font-family: "sans-serif";
+    font-size: 30px;
+    font-weight: 750;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-bottom: 3%;
+    text-decoration: underline;
+}
+
+.alarmList {
+    color: #fff;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.alarmLog {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+    letter-spacing: 1px;
+}
+
+footer {
+    text-align: center;
+    padding: 4px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+.linkedin-link{
+    color: white;
+    font-size: 13.4px;
+}
