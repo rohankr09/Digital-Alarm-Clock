@@ -1,5 +1,5 @@
 # Digital-Alarm-Clock
-Simple static webpage using HTML, CSS &amp; Javascript
+Simple static digital alarm clock using HTML, CSS &amp; Javascript
 
 It's live: - https://rohankr09.github.io/Digital-Alarm-Clock/
 
